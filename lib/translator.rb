@@ -10,12 +10,11 @@ def load_library(file_path)
     result[key][:english] = value[0]
     result[key][:japanese] = value[1]
   end
-  binding.pry
   result
 end
 
-def get_japanese_emoticon
-  # code goes here
+def get_japanese_emoticon(file_path, emoticon)
+  emoticons = YAML.load_file(file_path)
 end
 
 def get_english_meaning
